@@ -31,5 +31,10 @@ namespace PPT_Version_Control
         int pixles = height * width;
         return pixles;
           }
+        private void Form_Resize (object sender , EventArgs e)
+        {
+            int pixles = getPixles();
+            pixelsLabel.Text = "After resizing , this windows contains " + pixles + "pixles";
+        }
     }
 }
